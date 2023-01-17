@@ -8,3 +8,7 @@ CREATE TABLE Journeys (
   Travel_length_m SERIAL NOT NULL,
   Duration_sec SERIAL NOT NULL
 );
+
+COPY Journeys 
+    FROM './csv/Test.csv'
+    WITH (FORMAT csv)
